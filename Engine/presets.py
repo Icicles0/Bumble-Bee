@@ -12,4 +12,13 @@ def basicMovement(size, character, playerx, playery):
             playerx = playerx - 1
         elif movement == "d":
             playerx = playerx + 1
+
+        if playery < 0:
+            playery = playery + 1
+        elif playery > size - 1:
+            playery = playery - 1
+        if playerx < 0:
+            playerx = playerx + 1
+        elif playerx > size - 1:
+            playerx = playerx - 1
         render.clear()
